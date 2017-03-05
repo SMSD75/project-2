@@ -1,0 +1,8 @@
+www.ut.ac.ir 80.66.177.54 Noon
+www.ut.ac.ir 80.66.177.54 AfterNoon
+www.ut.ac.ir 80.66.177.54 Night
+www.ut.ac.ir 80.66.177.54 Morning
+www.cecm.ut.ac.ir 80.66.177.189 Noon
+www.cecm.ut.ac.ir 80.66.177.190 AfterNoon
+www.cecm.ut.ac.ir 80.66.177.191 Night
+www.cecm.ut.ac.ir 80.66.177.192 Morning

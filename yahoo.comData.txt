@@ -1,0 +1,8 @@
+www.yahoo.com 1.1.1.1 Morning
+www.yahoo.com 14.14.14.14 AfterNoon
+www.yahoo.com 13.12.1.1 Noon
+www.yahoo.com 123.12.134.23 Night
+www.mail.yahoo.com 123.12.134.23 Night
+www.mail.yahoo.com 5.4.5.4 Noon
+www.mail.yahoo.com 1.1.1.1 Morning
+www.mail.yahoo.com 5.4.5.4 AfterNoon

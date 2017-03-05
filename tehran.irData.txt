@@ -1,0 +1,4 @@
+www.tehran.ir 31.24.238.139 Noon
+www.tehran.ir 31.24.238.139 Night
+www.tehran.ir 31.24.238.139 AfterNoon
+www.tehran.ir 31.24.238.139 Morning

@@ -1,0 +1,9 @@
+www.google.com Night 5.5.5.5 1488639177 46
+www.google.com Noon 12.12.1.12 1488639104 61
+www.google.com Morning 2.2.2.2 1488639111 72
+www.google.com AfterNoon 45.45.45.45 1488639117 99
+www.yahoo.com Noon 13.12.1.1 1488639124 48
+www.mail.yahoo.com Morning 1.1.1.1 1488639133 41
+www.cecm.ut.ac.ir Noon 80.66.177.189 1488639141 96
+www.ut.ac.ir AfterNoon 80.66.177.54 1488639151 78
+www.mail.google.com Morning 2.2.2.2 1488639168 64

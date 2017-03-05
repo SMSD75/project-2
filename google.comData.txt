@@ -1,0 +1,8 @@
+www.google.com 12.12.1.12 Noon
+www.google.com 45.45.45.45 AfterNoon
+www.google.com 2.2.2.2 Morning
+www.google.com 5.5.5.5 Night
+www.mail.google.com 192.168.3.2 Night
+www.mail.google.com 1.1.1.1 AfterNoon
+www.mail.google.com 2.2.2.2 Morning
+www.mail.google.com 1.2.1.2 Noon
