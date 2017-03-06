@@ -136,7 +136,7 @@ public class FindHandler {
         else {
             // so it's iterative
             String nextDnsServerPort = FindNextDnsServerPort(jsonObject);
-            foundData = findIp(domain, time, "localhost", Integer.parseInt(nextDnsServerPort), "iterative");
+            foundData = findIp(domain, time, rootIp, Integer.parseInt(nextDnsServerPort), "iterative");
         }
 
         jsonIOHandler.close();
