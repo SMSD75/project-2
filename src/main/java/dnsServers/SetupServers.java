@@ -7,63 +7,79 @@ import java.io.IOException;
  */
 public class SetupServers{
 
+    public static int DNS_LISTEN_PORT = 1234;
+
     public static void main(String[] args) throws IOException {
-        DNS.RootDNS root = new DNS.RootDNS(6060, "root", 7070);
-//        root.addToDataBase("com", "6061");
-//        root.addToDataBase("net", "6061");
 
-        DNS.TldDNS com = new DNS.TldDNS(6061, "com");
-
-        DNS.AuthDNS google_com = new DNS.AuthDNS(6063, "google.com");
-        DNS.AuthDNS yahoo_com = new DNS.AuthDNS(6064, "yahoo.com");
-
-
-        DNS.RootDNS secondRoot = new DNS.RootDNS(6070, "secondRoot", 7070);
-
-        DNS.TldDNS org = new DNS.TldDNS(6071, "org");
-
-        DNS.AuthDNS pbs_org = new DNS.AuthDNS(6072, "pbs.org");
-
-
-        DNS.TldDNS ir = new DNS.TldDNS(6062, "ir");
-
-        DNS.AuthDNS ac_ir = new DNS.AuthDNS(6065, "ac.ir");
-        DNS.AuthDNS tehran_ir = new DNS.AuthDNS(6066, "tehran.ir");
-
-
-        RunDns runDns1 = new RunDns(root);
-        runDns1.start();
-
-        RunDns runDns2 = new RunDns(com);
-        runDns2.start();
-
-        RunDns runDns4 = new RunDns(google_com);
-        runDns4.start();
-
-        RunDns runDns5 = new RunDns(yahoo_com);
-        runDns5.start();
+        if (args[0].equals("root")) {
+            DNS.RootDNS root = new DNS.RootDNS(DNS_LISTEN_PORT, "root", 7070);
+            RunDns runDns1 = new RunDns(root);
+            runDns1.start();
+        }
+        else if (args[0].equals("com")) {
+            DNS.TldDNS com = new DNS.TldDNS(DNS_LISTEN_PORT, "com");
+            RunDns runDns2 = new RunDns(com);
+            runDns2.start();
+        }
+        else if (args[0].equals("google.com")) {
+            DNS.AuthDNS google_com = new DNS.AuthDNS(DNS_LISTEN_PORT, "google.com");
+            RunDns runDns4 = new RunDns(google_com);
+            runDns4.start();
+        }
+        else if (args[0].equals("yahoo.com")) {
+            DNS.AuthDNS yahoo_com = new DNS.AuthDNS(DNS_LISTEN_PORT, "yahoo.com");
+            RunDns runDns5 = new RunDns(yahoo_com);
+            runDns5.start();
+        }
 
 
 
-        RunDns runDns8 = new RunDns(secondRoot);
-        runDns8.start();
-
-        RunDns runDns9 = new RunDns(org);
-        runDns9.start();
-
-        RunDns runDns10 = new RunDns(pbs_org);
-        runDns10.start();
 
 
 
-        RunDns runDns3 = new RunDns(ir);
-        runDns3.start();
 
-        RunDns runDns6 = new RunDns(ac_ir);
-        runDns6.start();
+//        DNS.RootDNS secondRoot = new DNS.RootDNS(DNS_LISTEN_PORT, "secondRoot", 7070);
+//
+//        DNS.TldDNS org = new DNS.TldDNS(DNS_LISTEN_PORT, "org");
+//
+//        DNS.AuthDNS pbs_org = new DNS.AuthDNS(DNS_LISTEN_PORT, "pbs.org");
+//
+//
+//        DNS.TldDNS ir = new DNS.TldDNS(DNS_LISTEN_PORT, "ir");
+//
+//        DNS.AuthDNS ac_ir = new DNS.AuthDNS(DNS_LISTEN_PORT, "ac.ir");
+//        DNS.AuthDNS tehran_ir = new DNS.AuthDNS(DNS_LISTEN_PORT, "tehran.ir");
 
-        RunDns runDns7 = new RunDns(tehran_ir);
-        runDns7.start();
+
+
+
+
+
+
+
+
+
+//
+//
+//        RunDns runDns8 = new RunDns(secondRoot);
+//        runDns8.start();
+//
+//        RunDns runDns9 = new RunDns(org);
+//        runDns9.start();
+//
+//        RunDns runDns10 = new RunDns(pbs_org);
+//        runDns10.start();
+//
+//
+//
+//        RunDns runDns3 = new RunDns(ir);
+//        runDns3.start();
+//
+//        RunDns runDns6 = new RunDns(ac_ir);
+//        runDns6.start();
+//
+//        RunDns runDns7 = new RunDns(tehran_ir);
+//        runDns7.start();
 
     }
 

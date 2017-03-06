@@ -7,10 +7,7 @@ import common.StringHandler;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.net.DatagramSocket;
-import java.net.MulticastSocket;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.net.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -232,7 +229,7 @@ public class DNS {
             JSONObject tldRequest = agentRequest;
             JsonHandler.addPair(tldRequest, "method", "recursive");
 
-            Socket tldSocket = new Socket("localhost", Integer.parseInt(tldPort));
+            Socket tldSocket = new Socket(InetAddress.getByName(tldPort), 1234);
             JsonIOHandler tldJsonHandler = new JsonIOHandler(tldSocket);
             tldJsonHandler.sendJsonMassage(tldRequest);
 

@@ -16,6 +16,7 @@ import java.util.List;
 public class Agent {
 
     public static int AGENT_LISTEN_PORT = 1234;
+//    public static String AGENT_LISTEN_IP = "192.168.1.1";
     public static String AGENT_CONF_FILE = "agentConf.txt";
     public static ServerSocket agentListenSocket;
     public static void main(String args[]) throws IOException {

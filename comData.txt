@@ -1,2 +1,2 @@
-google.com 6063
-yahoo.com 6064
+google.com 192.168.1.3
+yahoo.com 192.168.1.4
